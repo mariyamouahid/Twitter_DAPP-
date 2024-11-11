@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Twitter</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.0/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Twitter</h1>
+
+		<!-- Action Container to hold the wallet and user switch controls side by side -->
+		<div class="action-container">
+			<img src="Twitter.gif" alt="Profile" class="profile-pic">
+			<button class="wallet-btn" onclick="connectWallet()">Connect Wallet</button>
+			
+			<!-- User Switch Section -->
+			<div class="delegate-box">
+				<h3>Authorize Another User</h3>
+				<div class="delegate-controls">
+					<input type="text" id="delegateAddress" class="delegate-input" placeholder="Enter delegate address" />
+					<button class="delegate-btn" onclick="setDelegate()">Authorize</button>
+					<button class="delegate-btn" onclick="revokeDelegate()">Revoke Authorization</button>
+				</div>
+			</div>
+		</div>	
+        
+        <!-- Post Form -->
+        <div class="post-box">
+            <img src="cat.jpg" alt="Profile" class="profile-pic">
+            <div class="post-input-section">
+                <input type="text" id="postContent" class="post-input" placeholder="What's new?" />
+                <div class="post-options">
+                    <i class="fas fa-image"></i>
+                    <i class="fas fa-gift"></i>
+                    <i class="fas fa-align-left"></i>
+                    <i class="fas fa-smile"></i>
+                </div>
+            </div>
+            <button class="tweet-btn" onclick="addPost()">Post</button>
+        </div>
+
+        <!-- Feed Section -->
+        <div class="feed">
+            <h2>News Feed</h2>
+            <div id="feed"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
