@@ -1,0 +1,722 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1419;
+    color: #d9d9d9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #15202b;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styling */
+h1 {
+    color: #1da1f2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(29, 161, 242, 0.4);
+}
+
+/* Wallet Button */
+.action-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between wallet button and delegate box */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+.post-btn {
+    background-color: #1da1f2;
+    width: 100%;
+}
+
+.post-btn:hover {
+    background-color: #1a91da;
+}
+
+/* Post Form Styling */
+.post-form {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.post-form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #253341;
+    background-color: #192734;
+    color: #d9d9d9;
+    border-radius: 50px;
+    font-size: 14px;
+    padding-left: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.post-form input::placeholder {
+    color: #8899a6;
+}
+
+.post-form input:focus {
+    border-color: #1da1f2;
+    outline: none;
+}
+
+/* Feed Styling */
+.feed h2 {
+    color: #d9d9d9;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+
+#feed {
+    margin-top: 10px;
+}
+
+/* Post Card Styling */
+.post-card {
+    background-color: #192734;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.post-card p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.post-author {
+    font-weight: bold;
+    color: #8899a6;
+}
+
+.post-timestamp {
+    font-size: 12px;
+    color: #8899a6;
+    margin-top: 5px;
+}
+
+/* Post Action Buttons */
+.post-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.like-btn, .comment-btn {
+    background-color: transparent;
+    color: #8899a6;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.like-btn i, .comment-btn i {
+    font-size: 16px;
+}
+
+.like-btn:hover, .comment-btn:hover {
+    background-color: rgba(29, 161, 242, 0.2);
+    color: #1da1f2;
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 15px;
+    border-top: 1px solid #253341;
+    padding-top: 15px;
+}
+
+.comment-section h3 {
+    font-size: 16px;
+    color: #d9d9d9;
+    margin: 10px 0;
+}
+
+.comment {
+    background-color: #253341;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment p {
+    font-size: 13px;
+    color: #e5e7eb;
+    margin: 0;
+}
+
+.comment small {
+    color: #8899a6;
+}
+
+/* Sidebar Suggestions (Placeholder Styling) */
+.sidebar {
+    background-color: #192734;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sidebar h3 {
+    color: #d9d9d9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebar p {
+    color: #8899a6;
+    font-size: 14px;
+}
+
+.sidebar button {
+    background-color: #1da1f2;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.sidebar button:hover {
+    background-color: #1a91da;
+}
+
+/* Animated Action Buttons */
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.like-btn:active, .comment-btn:active {
+    animation: pop 0.2s ease;
+}
+
+
+/* Post Form Styling */
+.post-form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    align-items: center;
+}
+
+.post-form input {
+    flex: 3;
+    padding: 12px 20px;
+    border: 1px solid #253341;
+    background-color: #192734;
+    color: #d9d9d9;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.post-form input::placeholder {
+    color: #8899a6;
+}
+
+.post-form input:focus {
+    border-color: #1da1f2;
+    outline: none;
+}
+
+/* Button Styling */
+.post-btn {
+    flex: 1;
+    background-color: #1da1f2;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.post-btn:hover {
+    background-color: #1a91da;
+}
+
+/* Container Styling */
+.post-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    background-color: #15202b;
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Input Section Styling */
+.post-input-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #192734;
+    color: #d9d9d9;
+    outline: none;
+}
+
+.post-input::placeholder {
+    color: #8899a6;
+}
+
+/* Post Options Styling */
+.post-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+    color: #1da1f2;
+}
+
+.post-options i {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.post-options i:hover {
+    color: #1a91da;
+}
+
+/* Tweet Button Styling */
+.tweet-btn {
+    padding: 10px 20px;
+    background-color: #1da1f2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tweet-btn:hover {
+    background-color: #1a91da;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1419;
+    color: #d9d9d9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #15202b;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+h1 {
+    color: #1da1f2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Updated Post Form Styling */
+.post-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    background-color: #15202b;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Input Section Styling */
+.post-input-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #192734;
+    color: #d9d9d9;
+    outline: none;
+}
+
+.post-input::placeholder {
+    color: #8899a6;
+}
+
+/* Post Options Styling */
+.post-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+    color: #1da1f2;
+}
+
+.post-options i {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.post-options i:hover {
+    color: #1a91da;
+}
+
+/* Tweet Button Styling */
+.tweet-btn {
+    padding: 10px 20px;
+    background-color: #1da1f2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.tweet-btn:hover {
+    background-color: #1a91da;
+}
+
+/* Feed Styling */
+.feed h2 {
+    color: #d9d9d9;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+
+#feed {
+    margin-top: 10px;
+}
+
+/* Post Actions Styling */
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.action-btn {
+    background-color: #253341;
+    color: #8899a6;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn:hover {
+    background-color: #1da1f2;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.action-btn i {
+    font-size: 16px;
+}
+
+.count {
+    font-size: 14px;
+}
+
+/* Specific Styling for Like, Dislike, and Edit Buttons */
+.like-btn {
+    background-color: #253341;
+}
+
+.dislike-btn {
+    background-color: #253341;
+}
+
+.edit-btn {
+    background-color: #253341;
+}
+/* Comment Section Styling */
+.comment-section {
+    margin-top: 15px;
+    border-top: 1px solid #253341;
+    padding-top: 15px;
+}
+
+.comment-section h3 {
+    font-size: 16px;
+    color: #d9d9d9;
+    margin-bottom: 10px;
+}
+
+/* Comment Input Container */
+.comment-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Comment Input Styling */
+.comment-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #253341;
+    background-color: #192734;
+    color: #d9d9d9;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.comment-input::placeholder {
+    color: #8899a6;
+}
+
+.comment-input:focus {
+    border-color: #1da1f2;
+}
+
+/* Comment Button Styling */
+.comment-btn {
+    background-color: #1da1f2;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.comment-btn i {
+    font-size: 16px;
+}
+
+.comment-btn:hover {
+    background-color: #1a91da;
+    transform: translateY(-2px);
+}
+
+/* Action Container for Wallet and Delegate Controls */
+.action-container {
+    display: flex;
+    align-items: stretch; /* Makes both elements have equal height */
+    gap: 20px; /* Space between wallet button and delegate box */
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Wallet Button */
+.wallet-btn {
+    background-color: #1da1f2;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 30px; /* Increased padding for better alignment */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(29, 161, 242, 0.4);
+    background-image: linear-gradient(90deg, #1da1f2, #1a91da);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensures it matches the height of the delegate-box */
+}
+
+/* Delegate Authorization Section */
+.delegate-box {
+    background-color: #192734;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px; /* Sets a minimum width */
+    height: 100%; /* Matches height with the wallet button */
+}
+
+/* Title Styling */
+.delegate-box h3 {
+    color: #1da1f2;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Delegate Controls */
+.delegate-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Delegate Input Styling */
+.delegate-input {
+    width: 200px; /* Adjusted width to fit well with buttons */
+    padding: 10px;
+    border: 1px solid #253341;
+    background-color: #15202b;
+    color: #d9d9d9;
+    border-radius: 50px;
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.delegate-input::placeholder {
+    color: #8899a6;
+}
+
+.delegate-input:focus {
+    border-color: #1da1f2;
+}
+
+/* Delegate Button Styling */
+.delegate-btn {
+    background-color: #1da1f2;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delegate-btn:hover {
+    background-color: #1a91da;
+    transform: translateY(-2px);
+}
+
+.delegate-btn:active {
+    background-color: #1685c3;
+}
